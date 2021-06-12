@@ -35,7 +35,7 @@
     "types"
   ],
   "dependencies": {
-    "react-native-crypto": "^2.2.0"
+    "react-native-crypto": "hainv053/react-native-crypto"
   },
   "devDependencies": {
     "@types/node": "^15.12.2",
