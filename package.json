@@ -1,9 +1,9 @@
 {
-  "name": "bip39",
+  "name": "react-native-bip39",
   "version": "3.0.4",
   "description": "Bitcoin BIP39: Mnemonic code for generating deterministic keys",
-  "main": "src/index.js",
-  "types": "./types/index.d.ts",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "build": "npm run clean && tsc -p tsconfig.json",
     "clean": "rm -rf src",
@@ -35,15 +35,10 @@
     "types"
   ],
   "dependencies": {
-    "@types/node": "11.11.6",
-    "create-hash": "^1.1.0",
-    "pbkdf2": "^3.0.9",
-    "randombytes": "^2.0.1"
+    "react-native-crypto": "^2.2.0"
   },
   "devDependencies": {
-    "@types/create-hash": "1.2.0",
-    "@types/pbkdf2": "3.0.0",
-    "@types/randombytes": "2.0.0",
+    "@types/node": "^15.12.2",
     "node-fetch": "^2.6.1",
     "nyc": "^15.0.0",
     "prettier": "1.16.4",

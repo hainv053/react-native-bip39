@@ -1,6 +1,5 @@
-import * as createHash from 'create-hash';
-import { pbkdf2, pbkdf2Sync } from 'pbkdf2';
-import * as randomBytes from 'randombytes';
+import { createHash, pbkdf2, pbkdf2Sync, randomBytes } from 'react-native-crypto';
+
 import { _default as _DEFAULT_WORDLIST, wordlists } from './_wordlists';
 
 let DEFAULT_WORDLIST: string[] | undefined = _DEFAULT_WORDLIST;
@@ -197,6 +196,7 @@ export function generateMnemonic(
   }
   rng = rng || randomBytes;
 
+  // @ts-ignore
   return entropyToMnemonic(rng(strength / 8), wordlist);
 }
 
